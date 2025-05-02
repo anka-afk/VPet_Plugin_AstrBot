@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="1101_EdgeTTS\**" />
+    <EmbeddedResource Remove="1101_EdgeTTS\**" />
+    <None Remove="1101_EdgeTTS\**" />
+    <Page Remove="1101_EdgeTTS\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EdgeTTS.Framework" Version="1.0.4" />
+    <PackageReference Include="LinePutScript" Version="1.11.9" />
+    <PackageReference Include="LinePutScript.Localization.WPF" Version="1.0.7" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="VPet-Simulator.Windows.Interface" Version="1.1.0.48" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.2" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.0" />
+  </ItemGroup>
+</Project>
